@@ -53,3 +53,13 @@ x = 10
 neg_x = -x
 print(neg_x)  # Output: -10
 
+#comparison operaters
+a = 1
+b = 2
+
+print(a == b)
+print(a != b)
+print( b > a)
+print( b < a)
+print(a <= b)
+print(a >= b)
