@@ -1,0 +1,8 @@
+# Ignore temporary files
+*.tmp
+
+# Ignore log files
+*.log
+
+# Ignore build directory
+.vscode/settings.json
