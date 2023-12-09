@@ -109,4 +109,3 @@ print(a >= b)
 
 ---
 
-Feel free to customize the README file further based on your preferences and the specific details you want to highlight in your lessons.
