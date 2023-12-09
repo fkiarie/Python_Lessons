@@ -1,4 +1,4 @@
-Certainly! Below is a sample README file for your Python programming lessons on arithmetic operators and comparison operators:
+
 
 ---
 
