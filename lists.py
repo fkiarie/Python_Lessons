@@ -19,3 +19,10 @@ print(slice2)
 slice3 = t[3:]  # index 3 to the end.
 
 print(slice3)
+
+# List Methods
+
+stuff = list()
+stuff.append('book')
+stuff.append('cookies')
+print(stuff)
