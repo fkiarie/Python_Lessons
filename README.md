@@ -1,4 +1,4 @@
-Certainly! Below is a sample README file for your Python programming lessons on arithmetic operators and comparison operators:
+
 
 ---
 
@@ -109,4 +109,3 @@ print(a >= b)
 
 ---
 
-Feel free to customize the README file further based on your preferences and the specific details you want to highlight in your lessons.
