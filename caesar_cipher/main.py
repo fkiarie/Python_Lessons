@@ -27,3 +27,15 @@ def vegenere(message, key, direction=1):
             final_text += alphabet[new_index]
     
     return final_text
+
+
+def encrypt(message,key):
+    vegenere(message, key)
+
+def decrypt(message, key):
+    vegenere(message, key, -1)
+
+print(f'\nEncrypted text: {text}')
+print(f'Key: {custom_key}')
+decryption = decrypt(text, custom_key)
+print(f'\nDecrypted text: {decryption}\n')
