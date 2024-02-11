@@ -24,7 +24,7 @@ def verify_card_number(card_number):
 
     
 def main():
-    card_number = '4111-1111-4555-1141'
+    card_number = input("Enter the credit card number: ")
     card_translation = str.maketrans({'-':'', ' ': ''})
     translated_card_number = card_number.translate(card_translation)
     if verify_card_number(translated_card_number):
