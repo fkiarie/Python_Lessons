@@ -4,7 +4,8 @@ playing = input("Do you want to play a game? ")
 
 if playing.lower() != "yes":
     quit()
-
+    
+# If the user wants to play, display a message and initialize the score
 print("Let's play!")
 score = 0
 
@@ -36,5 +37,6 @@ if answer.lower() == "power supply unit":
 else:
     print("incorrect!")
 
+# Display the total score and percentage of correct answers
 print("You got " + str(score) + " questions right")
 print("You got " + str((score / 4) * 100 )+ "%")
