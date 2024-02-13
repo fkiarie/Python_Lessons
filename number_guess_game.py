@@ -2,7 +2,7 @@ from curses.ascii import isdigit
 import random
 
 top_of_range = input("Type a number: ")
-
+guesses = 0
 if top_of_range.isdigit():
     top_of_range = int(top_of_range)
 
@@ -16,6 +16,7 @@ else:
 random_number = random.randint(0,top_of_range)
 
 while True:
+    guesses +=1
     user_guess = input("Make a guess: ")
     if user_guess.isdigit():
         user_guess = int(user_guess)
@@ -25,7 +26,9 @@ while True:
 
     if user_guess == random_number:
         print("You got it")
+        break
     else:
         print("you got it wrong")
 
 
+print("you got in", guesses, "guesses")
