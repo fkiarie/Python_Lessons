@@ -14,4 +14,24 @@ while True:
 
     random_number = random.randint(0,2)
     computer_pick = options[random_number]
-    
+    print("Computer picked: ", computer_pick)
+
+    if user_input == "rocks" and computer_pick == "scissors":
+        print("You won!")
+        user_wins +=1
+
+    elif user_input == "paper" and computer_pick == "rock":
+        print("You won!")
+        user_wins +=1
+
+    elif user_input == "scissors" and computer_pick == "paper":
+        print("You won!")
+        user_wins +=1
+
+    else:
+        print("you lost!")
+        computer_wins +=1
+
+
+print("You won", user_wins)
+print("Computer won", computer_wins)
