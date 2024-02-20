@@ -1,5 +1,11 @@
 pwd = input("Enter the master password")
 
+def view():
+    pass
+
+def add():
+    pass
+
 while True:
     mode = input("View or add new password? (view, add) press q for quit").lower()
     if mode == "q":
