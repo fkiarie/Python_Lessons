@@ -6,3 +6,6 @@
 
 # Ignore build directory
 .vscode/settings.json
+
+passwords.txt
+key.key
