@@ -1,7 +1,5 @@
 from cryptography.fernet import Fernet
 
-master_pwd = input("Enter the master password ")
-
 '''
 def write_key():
     key = Fernet.generate_key()
@@ -9,7 +7,16 @@ def write_key():
         key_file.write(key)
 '''
 def load_key():
-    return open("key.key", 'rb').read()
+    file = open("key.key", "rb")
+    key = file.read()
+    file.close()
+    return key
+
+
+master_pwd = input("Enter the master password ")
+key = load_key() + master_pwd.encode()
+fer =Fernet(key)
+
 
 def view():
     with open("passwords.txt", "r") as f:
