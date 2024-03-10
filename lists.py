@@ -23,7 +23,7 @@ print(slice3)
 # List Methods
 
 stuff = list()
-stuff.append('book')
+stuff.append('book') # add items to the end of the list. 
 stuff.append('cookies')
 print(stuff)
 
