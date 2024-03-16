@@ -1,4 +1,7 @@
 # concatinate
+from codecs import charmap_build
+
+
 a = [1, 2, 3, 4]
 b = [5, 6, 7, 8]
 
@@ -27,3 +30,20 @@ stuff.append('book') # add items to the end of the list.
 stuff.append('cookies')
 print(stuff)
 
+#List compreensions
+
+def convert_to_snake_case(pascal_or_camel_case_string):
+    snake_cased_char_list = [
+
+        '_'+ char.lower() if char.isupper()
+        else char
+        for char in pascal_or_camel_case_string
+    ]
+
+    return ''.join(snake_cased_char_list).strip('_')
+
+def main():
+    print(convert_to_snake_case('aLongAndComplexString'))
+
+if __name__ == '__main__':
+    main()
