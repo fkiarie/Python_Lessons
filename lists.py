@@ -30,20 +30,27 @@ stuff.append('book') # add items to the end of the list.
 stuff.append('cookies')
 print(stuff)
 
-#List compreensions
+# Liat comprehension
+# This Python script converts a given string in PascalCase or camelCase to snake_case.
 
 def convert_to_snake_case(pascal_or_camel_case_string):
+    # This function converts a given string in PascalCase or camelCase to snake_case.
+    # It creates a new list of characters, checking each character if it's uppercase.
+    # If the character is uppercase, it adds an underscore and converts it to lowercase.
+    # If the character is not uppercase, it simply adds the character to the new list.
     snake_cased_char_list = [
-
-        '_'+ char.lower() if char.isupper()
-        else char
+        '_' + char.lower() if char.isupper()  # Add an underscore and convert to lowercase if the character is uppercase
+        else char  # Otherwise, keep the character as it is
         for char in pascal_or_camel_case_string
     ]
 
+    # Join the characters in the list back into a single string, removing any leading underscore.
     return ''.join(snake_cased_char_list).strip('_')
 
 def main():
+    # Call the convert_to_snake_case function with a test string and print the result.
     print(convert_to_snake_case('aLongAndComplexString'))
 
 if __name__ == '__main__':
+    # Execute the main function if the script is run directly.
     main()
